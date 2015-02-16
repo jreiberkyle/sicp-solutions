@@ -1,3 +1,5 @@
+; 1.3: Define a procedure that takes three numbers as args and returns the sum of squares of the two larger numbers
+
 (define (sum-of-squares a b)
     (+ (* a a) (* b b))
 )
