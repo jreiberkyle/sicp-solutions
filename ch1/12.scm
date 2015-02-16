@@ -1,0 +1,11 @@
+; 1.12: Write a procedure that computes Pascal's triangle by means of a recursive process
+(define (f row entry)
+    (cond ((> entry row) 0)
+          ((= entry 0) 1)
+          ((= entry row) 1)
+          (else (+ (f (- row 1) (- entry 1))
+                   (f (- row 1) entry)
+                )
+          )
+    )
+)
